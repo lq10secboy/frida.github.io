@@ -1,0 +1,1398 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>News</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="alternate" type="application/rss+xml" title="Frida - Feed" href="/feed.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Recent commits to Frida’s master branch" href="https://github.com/frida/frida/commits/master.atom" />
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/screen.css" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <script src="/js/modernizr-2.5.3.min.js"></script>
+</head>
+
+
+<body class="wrap">
+  <header>
+  <nav class="mobile-nav show-on-mobiles">
+    <ul>
+  <li class="">
+    <a href="/">Overview</a>
+  </li>
+  <li class="">
+    <a href="/docs/home/">Doc<span class="show-on-mobiles">s</span><span class="hide-on-mobiles">umentation</span></a>
+  </li>
+  <li class="current">
+    <a href="/news/">News</a>
+  </li>
+  <li class="">
+    <a href="https://github.com/frida"><span class="hide-on-mobiles">View on </span>GitHub</a>
+  </li>
+</ul>
+
+  </nav>
+  <div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <h1>
+        <a href="/">
+          <span>Frida</span>
+          <img src="/img/logo-2x.png" width="226" height="115" alt="">
+        </a>
+      </h1>
+    </div>
+    <nav class="main-nav unit two-thirds hide-on-mobiles">
+      <ul>
+  <li class="">
+    <a href="/">Overview</a>
+  </li>
+  <li class="">
+    <a href="/docs/home/">Doc<span class="show-on-mobiles">s</span><span class="hide-on-mobiles">umentation</span></a>
+  </li>
+  <li class="current">
+    <a href="/news/">News</a>
+  </li>
+  <li class="">
+    <a href="https://github.com/frida"><span class="hide-on-mobiles">View on </span>GitHub</a>
+  </li>
+</ul>
+
+    </nav>
+  </div>
+</header>
+
+
+    <section class="news">
+    <div class="grid">
+
+      <div class="docs-nav-mobile unit whole show-on-mobiles">
+  <select onchange="if (this.value) window.location.href=this.value">
+    <option value="">Navigate the blog…</option>
+    <option value="/news/">Home</option>
+    <optgroup label="v1.x">
+      
+      <option value="/news/2015/03/20/frida-3-0-0-released/">Frida 3.0.0 Released</option>
+      
+      <option value="/news/2015/03/01/frida-2-0-2-released/">Frida 2.0.2 Released</option>
+      
+      <option value="/news/2015/03/01/frida-2-0-1-released/">Frida 2.0.1 Released</option>
+      
+      <option value="/news/2015/03/01/frida-2-0-0-released/">Frida 2.0.0 Released</option>
+      
+      <option value="/news/2015/02/23/frida-1-8-0-released/">Frida 1.8.0 Released</option>
+      
+      <option value="/news/2014/11/18/frida-1-6-8-released/">Frida 1.6.8 Released</option>
+      
+      <option value="/news/2014/11/03/frida-1-6-7-released/">Frida 1.6.7 Released</option>
+      
+      <option value="/news/2014/11/03/frida-1-6-6-released/">Frida 1.6.6 Released</option>
+      
+      <option value="/news/2014/10/29/frida-1-6-5-released/">Frida 1.6.5 Released</option>
+      
+      <option value="/news/2014/10/19/frida-1-6-4-released/">Frida 1.6.4 Released</option>
+      
+      <option value="/news/2014/08/25/frida-1-6-3-released/">Frida 1.6.3 Released</option>
+      
+      <option value="/news/2014/08/03/frida-1-6-2-released/">Frida 1.6.2 Released</option>
+      
+      <option value="/news/2014/07/26/frida-1-6-1-released/">Frida 1.6.1 Released</option>
+      
+      <option value="/news/2014/05/30/frida-1-6-0-released/">Frida 1.6.0 Released</option>
+      
+      <option value="/news/2014/05/14/frida-1-4-2-released/">Frida 1.4.2 Released</option>
+      
+      <option value="/news/2014/05/14/frida-1-4-1-released/">Frida 1.4.1 Released</option>
+      
+      <option value="/news/2014/05/04/frida-1-4-0-released/">Frida 1.4.0 Released</option>
+      
+      <option value="/news/2014/04/21/frida-1-2-1-released/">Frida 1.2.1 Released</option>
+      
+      <option value="/news/2014/04/17/frida-1-2-0-released/">Frida 1.2.0 Released</option>
+      
+      <option value="/news/2014/03/09/frida-1-0-11-released/">Frida 1.0.11 Released</option>
+      
+      <option value="/news/2014/02/16/frida-1-0-10-released/">Frida 1.0.10 Released</option>
+      
+      <option value="/news/2014/01/25/frida-1-0-9-released/">Frida 1.0.9 Released</option>
+      
+      <option value="/news/2014/01/15/frida-1-0-8-released/">Frida 1.0.8 Released</option>
+      
+      <option value="/news/2014/01/12/frida-1-0-7-released/">Frida 1.0.7 Released</option>
+      
+      <option value="/news/2014/01/11/frida-1-0-6-released/">Frida 1.0.6 Released</option>
+      
+      <option value="/news/2014/01/05/frida-1-0-5-released/">Frida 1.0.5 Released</option>
+      
+    </optgroup>
+  </select>
+</div>
+
+
+      <div class="unit four-fifths">
+        
+  <article>
+  <h2>
+    <a href="/news/2015/03/20/frida-3-0-0-released/">
+      Frida 3.0.0 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      20 Mar 2015
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>You may have wondered:</p>
+
+<blockquote>
+  <p>Why a Python API, but JavaScript debugging logic?</p>
+</blockquote>
+
+<p>Well, you can now do this:</p>
+
+<div class="highlight"><pre><code class="language-sh" data-lang="sh"><span class="nv">$ </span>npm install frida</code></pre></div>
+
+<p>We just brought you brand new <a href="https://github.com/frida/frida-node">Node.js bindings</a>,
+and they are fully asynchronous:</p>
+
+<script src="https://gist.github.com/6ecae99945ccba47427a.js"> </script>
+
+<p>Check out the <a href="https://github.com/frida/frida-node/blob/46a5f92203ab86978a2af68d6c926d6d2b63fbe7/examples/interactive.js">examples</a>
+to get an idea what the API looks like. It’s pretty much a 1:1 mapping of the
+API provided by the Python bindings, but following Node.js / JavaScript
+conventions like camelCased method-names, methods returning ES6 <em>Promise</em>
+objects instead of blocking, etc.</p>
+
+<p>Now, combine this with <a href="https://github.com/nwjs/nw.js/">NW.js</a> and you can build
+your own desktop apps with HTML, CSS, and JavaScript all the way through.</p>
+
+<p>So, brand new Node.js bindings; awesome! We did not stop there, however.
+But first, a few words about the future. I am excited to announce that I have
+just started a company with the goal of sponsoring part-time development of
+Frida. By offering reverse-engineering and software development expertise,
+the goal is to generate enough revenue to pay my bills and leave some time
+to work on Frida. Longer term I’m hoping there will also be demand for help
+adding features or integrating Frida into third-party products.
+In the meantime, however, if you know someone looking for reverse-engineering
+or software development expertise, I would really appreciate it if you could
+kindly refer them to get in touch. Please see <a href="https://github.com/oleavr/cv/raw/master/oleavr.pdf">my CV</a>
+for details.</p>
+
+<p>That aside, let’s get back to the release. Next up: 32-bit Linux support!
+Even <em>Stalker</em> has been ported. Not just that, the Linux backend can even do
+cross-architecture injection like we do on the other platforms. This means a
+64-bit Frida process, e.g. your Python interpreter, can inject into a 32-bit
+process. The other direction works too.</p>
+
+<p>Another awesome update is that <a href="https://github.com/Tyilo">Tyilo</a> contributed
+<a href="https://github.com/frida/frida-python/commit/daf1a310670588e5672af2205658598be342c2e2">improvements</a>
+to <em>frida-trace</em> so it now uses man-pages for auto-generating the log handlers.
+Awesome, huh? But there’s even more goodies:</p>
+
+<ul>
+  <li><em>frida-server</em> ports are now recycled, so if you’re using Frida on Android
+you won’t have to keep forwarding ports unless you’re actually attaching to
+multiple processes at the same time.</li>
+  <li>Linux and Android <code>spawn()</code> support has been improved to also support PIE
+binaries.</li>
+  <li>Android stability and compatibility improvements.</li>
+  <li>Mac and Linux build system have been revamped, and make it easy to build just
+the parts that you care about; and maybe even some components you didn’t even
+know were there that were previously not built by default.</li>
+  <li>Python bindings have a minor simplification so instead of
+<code>frida.attach(pid).session.create_script()</code> it’s simply just
+<code>frida.attach(pid).create_script()</code>. This is just like in the brand
+new Node.js bindings, and the reason we had to bump the major version.</li>
+</ul>
+
+<p>That’s the gist of it. Please help spread the word by sharing this post across
+the inter-webs. We’re still quite small as an open source project, so
+word-of-mouth marketing means a lot to us.</p>
+
+<p>Enjoy!</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2015/03/01/frida-2-0-2-released/">
+      Frida 2.0.2 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      01 Mar 2015
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>Thanks to your excellent feedback we just eliminated a crasher when using
+Frida on Windows with certain iOS device configurations. As this is a very
+important use-case we decided to do a hotfix release without any other changes.</p>
+
+<p>Please keep the bug-reports coming!</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2015/03/01/frida-2-0-1-released/">
+      Frida 2.0.1 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      01 Mar 2015
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>Just a quick bug-fix release to remedy an iOS issue that slipped through the
+final testing of 2.0.0. Enjoy!</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2015/03/01/frida-2-0-0-released/">
+      Frida 2.0.0 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      01 Mar 2015
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>It’s time for a new and exciting release! Key changes include:</p>
+
+<ul>
+  <li>No more kernel panics on Mac and iOS! Read the full story
+<a href="https://medium.com/@oleavr/diy-kernel-panic-os-x-and-ios-in-10-loc-c250d9649159">here</a>.</li>
+  <li>Mac and iOS injector performs manual mapping of Frida’s dylib. This means
+we’re able to attach to heavily sandboxed processes.</li>
+  <li>The CLI tools like <em>frida-trace</em>, <em>frida-repl</em>, etc., have brand new support
+for spawning processes:</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>frida-trace -i <span class="s1">&#39;open*&#39;</span> -i <span class="s1">&#39;read*&#39;</span> /bin/cat /etc/resolv.conf
+    <span class="m">27</span> ms	open<span class="nv">$NOCANCEL</span><span class="o">()</span>
+    <span class="m">28</span> ms	<span class="nb">read</span><span class="nv">$NOCANCEL</span><span class="o">()</span>
+    <span class="m">28</span> ms	<span class="nb">read</span><span class="nv">$NOCANCEL</span><span class="o">()</span>
+    <span class="m">28</span> ms	<span class="nb">read</span><span class="nv">$NOCANCEL</span><span class="o">()</span>
+Target process terminated.
+Stopping...
+<span class="err">$</span></code></pre></div>
+
+<ul>
+  <li>Usability improvements in <em>frida-repl</em> and <em>frida-discover</em>.</li>
+  <li>First call to <code>DeviceManager.enumerate_devices()</code> does a better job and
+also gives you the currently connected iOS devices, so for simple applications
+or scripts you no longer have to subscribe to updates if you require the
+device to already be present.</li>
+  <li>The python API now provides you with <code>frida.get_usb_device(timeout = 0)</code> and
+<code>frida.get_remote_device()</code> for easy access to iOS and remote/Android
+devices.</li>
+  <li>The <code>onEnter</code> and <code>onLeave</code> callbacks passed to <code>Interceptor.attach()</code> may
+access <code>this.registers</code> to inspect CPU registers, which is really useful
+when dealing with custom calling conventions.</li>
+  <li><code>console.log()</code> logs to the console on your application’s side instead of
+the target process. This change is actually why we had to bump the major
+version for this release.</li>
+  <li>Android 5.0 compatibility, modulo ART support.</li>
+  <li>Brand new support for Android/x86. Everything works except the Dalvik
+integration; please get in touch if you’d like to help out with a pull-request
+to fix that!</li>
+</ul>
+
+<p>Want to help out? Have a look at our <a href="http://www.frida.re/docs/gsoc-ideas-2015/">GSoC 2015 Ideas Page</a>
+to get an overview of where we’d like to go next.</p>
+
+<p>Enjoy!</p>
+
+<p><strong>Update 2am:</strong> An iOS issue slipped through the final testing, so we
+just pushed 2.0.1 to remedy this.</p>
+
+<p><strong>Update 11pm:</strong> Thanks to your excellent feedback we found a critical
+bug when using Frida on Windows with certain iOS device configurations.
+Please upgrade to 2.0.2 and let us know if you run into any issues.</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2015/02/23/frida-1-8-0-released/">
+      Frida 1.8.0 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      23 Feb 2015
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p><strong>This release introduced a serious regression on iOS and was quickly pulled
+from our Cydia repo, though it was available for Mac, Linux and Android while
+waiting to be replaced by <a href="/news/2015/03/01/frida-2-0-0-released/">2.0.0</a>.</strong></p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/11/18/frida-1-6-8-released/">
+      Frida 1.6.8 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      18 Nov 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>Just a minor bug-fix release to fix <code>spawn()</code> on Mac, and resolve some
+teardown issues. Enjoy!</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/11/03/frida-1-6-7-released/">
+      Frida 1.6.7 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      03 Nov 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>Tired of waiting for Frida to attach to 32-bit processes on 64-bit Mac
+or iOS systems? Or perhaps <code>frida-trace</code> takes a while to resolve functions?
+If any of the above, or none of it, then this release is for you!</p>
+
+<p>Attaching to 32-bit processes on Mac/iOS hosts has been optimized, and instead
+of seconds this is now a matter of milliseconds. That’s however specific to
+Darwin OSes; this release also speeds up enumeration of module exports on
+all OSes. This is now 75% faster, and should be very noticable when using
+<code>frida-trace</code> and waiting for it to resolve functions.</p>
+
+<p>Also, as an added bonus, teardown while attached to multiple processes no
+longer crashes on Darwin and Linux.</p>
+
+<p>Enjoy!</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/11/03/frida-1-6-6-released/">
+      Frida 1.6.6 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      03 Nov 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p><strong>This release introduced a serious regression and was quickly pulled and
+replaced by <a href="/news/2014/11/03/frida-1-6-7-released/">1.6.7</a>.</strong></p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/10/29/frida-1-6-5-released/">
+      Frida 1.6.5 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      29 Oct 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>It’s release o’clock, and time for some bug fixes:</p>
+
+<ul>
+  <li>iOS 8.1 is now supported, and the ARM64 support is better than ever.</li>
+  <li>The iOS USB transport no longer disconnects when sending a burst of data to
+the device. This would typically happen when using <code>frida-trace</code> and tracing
+a bunch of functions, resulting in a burst of data being sent over the wire.
+This was actually <a href="https://bugzilla.gnome.org/show_bug.cgi?id=11059">a generic networking issue affecting Mac and iOS</a>,
+but was very reproducible when using Frida with a tethered iOS device.</li>
+  <li>Eliminated crashes on shutdown of the Python interpreter.</li>
+  <li>The <code>onEnter</code> and <code>onLeave</code> callbacks in <code>frida-trace</code> scripts are now called
+with <code>this</code> bound to the correct object, which means that it’s bound to an
+object specific to that thread and invocation, and not an object shared by
+all threads and invocations.</li>
+</ul>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/10/19/frida-1-6-4-released/">
+      Frida 1.6.4 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      19 Oct 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>It’s time for a bug-fix release!</p>
+
+<p>Stalker improvements:</p>
+
+<ul>
+  <li>The engine no longer pre-allocates a fixed chunk of 256 MB per thread being
+traced, and now grows this dynamically in a reentrancy-safe manner.</li>
+  <li>Eliminated a bug in the cache lookup logic where certain blocks would always
+result in a cache miss. Those blocks thus got recompiled every time they
+were about to get executed, slowing down execution and clogging up the cache
+with more and more entries, and eventually running out of memory.</li>
+  <li>Relocation of RIP-relative <code>cmpxchg</code> instruction is now handled correctly.</li>
+</ul>
+
+<p>Better Dalvik integration (Android):</p>
+
+<ul>
+  <li>App’s own classes can now be loaded.</li>
+  <li>Several marshalling bugs have been fixed.</li>
+</ul>
+
+<p>Script runtime:</p>
+
+<ul>
+  <li>More than one NativeFunction with the same target address no longer results
+in use-after-free.</li>
+</ul>
+
+<p>Also, <a href="https://github.com/frida/cryptoshark">CryptoShark 0.1.2</a> is out,
+with an upgraded Frida engine and lots of performance improvements so the GUI
+is able to keep up with the Stalker. Go get it while it’s hot!</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/08/25/frida-1-6-3-released/">
+      Frida 1.6.3 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      25 Aug 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>This latest release includes a bunch of enhancements and bug fixes.
+Some of the highlights:</p>
+
+<ul>
+  <li>
+    <p>The remainder of Frida’s internals have been migrated from udis86 to
+Capstone, which means that our Stalker is now able to trace binaries with
+very recent x86 instructions. Part of this work also included battle-testing
+it on 32- and 64-bit binaries on Windows and Mac, and all known issues have
+now been resolved.</p>
+  </li>
+  <li>
+    <p><code>Memory.protect()</code> has been added to the JavaScript API, allowing you to
+easily change page protections. For example:</p>
+  </li>
+</ul>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">Memory</span><span class="p">.</span><span class="nx">protect</span><span class="p">(</span><span class="nx">ptr</span><span class="p">(</span><span class="s2">&quot;0x1234&quot;</span><span class="p">),</span> <span class="mi">4096</span><span class="p">,</span> <span class="s1">&#39;rw-&#39;</span><span class="p">);</span></code></pre></div>
+
+<ul>
+  <li>
+    <p><code>Process.enumerateThreads()</code> omits Frida’s own threads so you don’t have to
+worry about them.</p>
+  </li>
+  <li>
+    <p>Python 3 binaries are now built against Python 3.4.</p>
+  </li>
+</ul>
+
+<p>So with this release out, let’s talk about <a href="https://github.com/frida/cryptoshark">CryptoShark</a>:</p>
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/hzDsxtcRavY?rel=0" frameborder="0" allowfullscreen=""></iframe>
+
+<p>Grab a pre-built Windows binary <a href="http://build.frida.re/frida/windows/Win32-Release/bin/cryptoshark-0.1.1.exe">here</a>,
+or build it from source if you’d like to try it out on Mac or Linux.</p>
+
+<p>Enjoy!</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/08/03/frida-1-6-2-released/">
+      Frida 1.6.2 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      03 Aug 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>It’s release o’clock, and this time we’re bringing you more than just bugfixes.
+Meet <code>Instruction.parse()</code>:</p>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="nx">Instruction</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">ptr</span><span class="p">(</span><span class="s2">&quot;0x1234&quot;</span><span class="p">));</span>
+<span class="kd">var</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">Instruction</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">next</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span><span class="p">);</span></code></pre></div>
+
+<p>Output:</p>
+
+<div class="highlight"><pre><code class="language-nasm" data-lang="nasm"><span class="nf">push</span> <span class="nb">rbp</span>
+<span class="nf">mov</span> <span class="nb">rbp</span><span class="p">,</span> <span class="nb">rsp</span></code></pre></div>
+
+<p>How is this implemented you ask? That’s the cool part. Frida already uses the
+amazing <a href="http://www.capstone-engine.org/">Capstone disassembly framework</a>
+behind the scenes, and thus it makes perfect sense to make it available to the
+JavaScript runtime. Have a look at the
+<a href="http://www.frida.re/docs/javascript-api/">JavaScript API Reference</a> for all
+the details.</p>
+
+<p>Enjoy!</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/07/26/frida-1-6-1-released/">
+      Frida 1.6.1 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      26 Jul 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>It’s time for a bugfix release. Highlights:</p>
+
+<ul>
+  <li>Compatibility with the Pangu iOS jailbreak on ARM64. The issue is that RWX
+pages are not available like they used to be with the evad3rs jailbreak.</li>
+  <li>Fix occasional target process crash when detaching.</li>
+  <li>Fix crash when trying to attach to a process the second time after failing
+to establish the first time. This primarily affected Android users, but could
+happen on any OS when using <code>frida-server</code>.</li>
+  <li>Faster and more reliable injection on Linux/x86-64 and Android/ARM.</li>
+  <li>Fix issues preventing hooking of HeapFree and friends on Windows.</li>
+  <li>Upgraded GLib, libgee, json-glib and Vala dependencies for improved
+performance and bugfixes.</li>
+  <li>No more resource leaks. Please report if you find any.</li>
+</ul>
+
+<p>Also new since 1.6.0, as covered in my <a href="https://medium.com/@oleavr/build-a-debugger-in-5-minutes-1-5-51dce98c3544">blog post</a>, there is now a full-
+featured <a href="https://github.com/frida/frida-qml">binding for Qml</a>. This should be of interest to those of you
+building graphical cross-platform tools.</p>
+
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/05/30/frida-1-6-0-released/">
+      Frida 1.6.0 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      30 May 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>As some of you may have noticed, Frida recently got brand new Android support,
+allowing you to easily instrument code just like on Windows, Mac, Linux and iOS.
+This may sound cool and all, but Android does run a lot of Java code, which
+means you’d only be able to observe the native side-effects of whatever
+that code was doing. You could of course use Frida’s FFI API to poke your way
+into the VM, but hey, shouldn’t Frida just do that dirty plumbing for you?
+Of course it should!</p>
+
+<p>Here’s what it looks like in action:</p>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">Dalvik</span><span class="p">.</span><span class="nx">perform</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">Activity</span> <span class="o">=</span> <span class="nx">Dalvik</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s2">&quot;android.app.Activity&quot;</span><span class="p">);</span>
+    <span class="nx">Activity</span><span class="p">.</span><span class="nx">onResume</span><span class="p">.</span><span class="nx">implementation</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="nx">send</span><span class="p">(</span><span class="s2">&quot;onResume() got called! Let&#39;s call the original implementation&quot;</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">onResume</span><span class="p">();</span>
+    <span class="p">};</span>
+<span class="p">});</span></code></pre></div>
+
+<p>The <code>Dalvik.perform()</code> call takes care of attaching your thread to the VM,
+and isn’t necessary in callbacks from Java. Also, the first time you call
+<code>Dalvik.use()</code> with a given class name, Frida will interrogate the VM and
+build a JavaScript wrapper on-the-fly. Above we ask for the
+<a href="http://developer.android.com/reference/android/app/Activity.html">Activity</a>
+class and replace its implementation of <code>onResume</code> with our own version,
+and proceed to calling the original implementation after sending a message
+to the debugger (running on your Windows, Mac or Linux machine). You could
+of course choose to not call the original implementation at all, and emulate
+its behavior. Or, perhaps you’d like to simulate an error scenario:</p>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">Dalvik</span><span class="p">.</span><span class="nx">perform</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">Activity</span> <span class="o">=</span> <span class="nx">Dalvik</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s2">&quot;android.app.Activity&quot;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">Exception</span> <span class="o">=</span> <span class="nx">Dalvik</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s2">&quot;java.lang.Exception&quot;</span><span class="p">);</span>
+    <span class="nx">Activity</span><span class="p">.</span><span class="nx">onResume</span><span class="p">.</span><span class="nx">implementation</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="k">throw</span> <span class="nx">Exception</span><span class="p">.</span><span class="nx">$new</span><span class="p">(</span><span class="s2">&quot;Oh noes!&quot;</span><span class="p">);</span>
+    <span class="p">};</span>
+<span class="p">});</span></code></pre></div>
+
+<p>So there you just instantiated a Java Exception and threw it straight from
+your JavaScript implementation of <code>Activity.onResume</code>.</p>
+
+<p>This release also comes with some other runtime goodies:</p>
+
+<ul>
+  <li><code>Memory.copy(dst, src, n)</code>: just like memcpy</li>
+  <li><code>Memory.dup(mem, size)</code>: short-hand for <code>Memory.alloc()</code> followed by
+<code>Memory.copy()</code></li>
+  <li><code>Memory.writeXXX()</code>: the missing <code>Memory.read()</code> counterparts: S8, S16, U16,
+S32, U32, S64, U64, ByteArray, Utf16String and AnsiString</li>
+  <li><code>Process.pointerSize</code> to make your scripts more portable</li>
+  <li><code>NativePointer</code> instances now have a convenient <code>isNull()</code> method</li>
+  <li><code>NULL</code> constant so you don’t have to do <code>ptr("0")</code> all over the place</li>
+  <li><code>WeakRef.bind(value, fn)</code> and <code>WeakRef.unbind(id)</code> for the hardcore:
+The former monitors <code>value</code> so <code>fn</code> gets called as soon as <code>value</code> has been
+garbage-collected, or the script is about to get unloaded. It returns an
+id that you can pass to <code>unbind()</code> for explicit cleanup.
+This API is useful if you’re building a language-binding, where you need to
+free native resources when a JS value is no longer needed.</li>
+</ul>
+
+<p>Enjoy!</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/05/14/frida-1-4-2-released/">
+      Frida 1.4.2 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      14 May 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>Just a quick bugfix release to squash
+<a href="https://github.com/frida/frida-core/issues/5">this annoying bug</a>, which is
+reproducible on all supported x86 OSes. Thanks for Guillaume for tracking
+this one down.</p>
+
+<p>As a bonus, frida-repl now also works on Windows. Happy REPLing!</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/05/14/frida-1-4-1-released/">
+      Frida 1.4.1 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      14 May 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>Interested in spawning processes on Windows or Linux, and not just on Mac? Or
+maybe you’ve been bitten by the Linux injector crashing your processes instead
+of letting you inject into them? Or maybe you had a function name that was so
+long that frida-trace overflowed the max filename length on Windows? Well, if
+any of the above, or none of it, then Frida 1.4.1 is for you!</p>
+
+<p>Thanks to Guillaume and Pedro for making this release awesome. Keep those pull-
+requests and bug reports coming!</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/05/04/frida-1-4-0-released/">
+      Frida 1.4.0 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      04 May 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>Did anyone say Android? Frida 1.4.0 is out, with brand new Android support!
+Have a look at the documentation <a href="/docs/android/">here</a>
+to get started. Also new in this release is that Frida is now powered by
+the amazing <a href="http://www.capstone-engine.org/">Capstone Disassembly Engine</a>,
+which means our cross-platform code instrumentation is even more powerful.
+It also paves the way for taking the x86-only <a href="https://github.com/frida/frida-gum/blob/41dbb1d27a784fd8b5e233929a317cd41beb9c2d/tests/core/arch-x86/stalker-x86.c#L78">stealth tracing</a>
+to new architectures in future releases.</p>
+
+<p>Enjoy!</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/04/21/frida-1-2-1-released/">
+      Frida 1.2.1 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      21 Apr 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>Had some fun tracing Apple’s crypto APIs, which lead to the discovery of
+a few bugs. So here’s 1.2.1 bringing some critical ARM-related bugfixes:</p>
+
+<ul>
+  <li>ARM32: Fix crashes caused by register clobber issue in V8 on ARM32 due to
+an ABI difference regarding <code>r9</code> in Apple’s ABI compared to AAPCS.</li>
+  <li>ARM32: Fix ARM32/Thumb relocator branch rewriting for immediate same-mode
+branches.</li>
+  <li>ARM64: Improve ARM64 relocator to support rewriting <code>b</code> and <code>bl</code>.</li>
+</ul>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/04/17/frida-1-2-0-released/">
+      Frida 1.2.0 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      17 Apr 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>It’s release-o-clock, and Frida 1.2.0 is finally out! Bugfixes aside, this
+release introduces brand new ARM64 support, which is quite useful for those of
+you using Frida on your iPhone 5S or iPad Air. You can now inject into both 64-
+and 32-bit processes, just like on Mac and Windows.</p>
+
+<p>This release also improves stability on ARM32, where attaching to short
+functions used to result in undefined behavior.</p>
+
+<p>Enjoy!</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/03/09/frida-1-0-11-released/">
+      Frida 1.0.11 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      09 Mar 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>Some of you experienced issues injecting into processes on Windows, as well as
+crashes on iOS. Here’s a new release bringing some serious improvements to
+Frida’s internals:</p>
+
+<ul>
+  <li>V8 has been upgraded to 3.25 in order to fix the iOS stability issues. This
+also means new features (like ECMAScript 6) and improved performance on all
+platforms. Another nice aspect is that Frida now depends on a V8 version
+that runs on 64-bit ARM, which paves the way for porting Frida itself to
+AArch64.</li>
+  <li>The Windows injector has learned some new tricks and will get you into even
+more processes. A configuration error was also discovered in the Windows
+build system, which explains why some of you were unable to inject into
+some processes.</li>
+  <li>For those of you building Frida on Windows, the build system there now
+depends on VS2013. This means XP is no longer supported, though it is still
+possible to build with the <code>v120_xp</code> toolchain if any of you still depend
+on that, so let me know if this is a deal-breaker for you.</li>
+  <li>The recently added support for <code>this.lastError</code> (Windows) is now working
+correctly.</li>
+</ul>
+
+<p>That’s all for now. Let us know what you think, and if you like Frida, please
+help spread the word! :)</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/02/16/frida-1-0-10-released/">
+      Frida 1.0.10 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      16 Feb 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>This release brings a few improvements:</p>
+
+<ul>
+  <li><code>Interceptor</code> is now compatible with a lot more functions on iOS/ARM.</li>
+  <li>A new CLI tool called <code>frida-repl</code> provides you with a basic REPL to
+experiment with the JavaScript API from inside a target process.</li>
+  <li><code>onLeave</code> callback passed to <code>Interceptor.attach()</code> is now able to replace
+the return value by calling <code>retval.replace()</code>.</li>
+  <li>Both <code>onEnter</code> and <code>onLeave</code> callbacks passed to <code>Interceptor.attach()</code> can
+access <code>this.errno</code> (UNIX) or <code>this.lastError</code> (Windows) to inspect or
+manipulate the current thread’s last system error.</li>
+</ul>
+
+<p>Here’s how you can combine the latter three to simulate network conditions for
+a specific process running on your Mac:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">~ <span class="nv">$ </span>frida-repl TargetApp</code></pre></div>
+
+<p>Then paste in:</p>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">callbacks</span> <span class="o">=</span> <span class="p">{</span> <span class="o">\</span>
+    <span class="nx">onEnter</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">onEnter</span><span class="p">(</span><span class="nx">args</span><span class="p">)</span> <span class="p">{</span> <span class="o">\</span>
+        <span class="nx">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="nx">ptr</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span> <span class="c1">// Avoid side-effects on socket \</span>
+    <span class="p">},</span> <span class="o">\</span>
+    <span class="nx">onLeave</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">onLeave</span><span class="p">(</span><span class="nx">retval</span><span class="p">)</span> <span class="p">{</span> <span class="o">\</span>
+        <span class="kd">var</span> <span class="nx">ECONNREFUSED</span> <span class="o">=</span> <span class="mi">61</span><span class="p">;</span> <span class="o">\</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">errno</span> <span class="o">=</span> <span class="nx">ECONNREFUSED</span><span class="p">;</span> <span class="o">\</span>
+        <span class="nx">retval</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span> <span class="o">\</span>
+    <span class="p">}</span> <span class="o">\</span>
+<span class="p">};</span> <span class="o">\</span>
+<span class="nx">Module</span><span class="p">.</span><span class="nx">enumerateExports</span><span class="p">(</span><span class="s2">&quot;libsystem_kernel.dylib&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="o">\</span>
+    <span class="nx">onMatch</span><span class="o">:</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">exp</span><span class="p">)</span> <span class="p">{</span> <span class="o">\</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">exp</span><span class="p">.</span><span class="nx">name</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s2">&quot;connect&quot;</span><span class="p">)</span> <span class="o">===</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="nx">exp</span><span class="p">.</span><span class="nx">name</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s2">&quot;connectx&quot;</span><span class="p">)</span> <span class="o">!==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="o">\</span>
+            <span class="nx">Interceptor</span><span class="p">.</span><span class="nx">attach</span><span class="p">(</span><span class="nx">exp</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span> <span class="nx">callbacks</span><span class="p">);</span> <span class="o">\</span>
+        <span class="p">}</span> <span class="o">\</span>
+    <span class="p">},</span> <span class="o">\</span>
+    <span class="nx">onComplete</span><span class="o">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{}</span> <span class="o">\</span>
+<span class="p">});</span></code></pre></div>
+
+<p>Enjoy!</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/01/25/frida-1-0-9-released/">
+      Frida 1.0.9 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      25 Jan 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>Another release — this time with some new features:</p>
+
+<ul>
+  <li>Objective-C integration for Mac and iOS. Here’s an example to whet your
+appetite:</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">UIAlertView</span> <span class="o">=</span> <span class="nx">ObjC</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">&#39;UIAlertView&#39;</span><span class="p">);</span> <span class="cm">/* iOS */</span>
+<span class="nx">ObjC</span><span class="p">.</span><span class="nx">schedule</span><span class="p">(</span><span class="nx">ObjC</span><span class="p">.</span><span class="nx">mainQueue</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">view</span> <span class="o">=</span> <span class="nx">UIAlertView</span><span class="p">.</span><span class="nx">alloc</span><span class="p">().</span><span class="nx">initWithTitle_message_delegate_cancelButtonTitle_otherButtonTitles_</span><span class="p">(</span>
+        <span class="s2">&quot;Frida&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;Hello from Frida&quot;</span><span class="p">,</span>
+        <span class="nx">ptr</span><span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">),</span>
+        <span class="s2">&quot;OK&quot;</span><span class="p">,</span>
+        <span class="nx">ptr</span><span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">));</span>
+    <span class="nx">view</span><span class="p">.</span><span class="nx">show</span><span class="p">();</span>
+    <span class="nx">view</span><span class="p">.</span><span class="nx">release</span><span class="p">();</span>
+<span class="p">});</span></code></pre></div>
+
+<ul>
+  <li><code>Module.enumerateExports()</code> now also enumerates exported variables and not
+just functions. The <code>onMatch</code> callback receives an <code>exp</code> object where the
+<code>type</code> field is either <code>function</code> or <code>variable</code>.</li>
+</ul>
+
+<p>To get the full scoop on the ObjC integration, have a look at the
+<a href="http://www.frida.re/docs/javascript-api/">JavaScript API reference</a>.</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/01/15/frida-1-0-8-released/">
+      Frida 1.0.8 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      15 Jan 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>We just rolled out a bugfix release:
+- Support injection into Mac App Store apps
+- Eliminate iOS daemon auto-start issues
+- No more iOS crashes shortly after injecting</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/01/12/frida-1-0-7-released/">
+      Frida 1.0.7 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      12 Jan 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>This release brings USB device support in the command-line tools, and
+adds <code>frida-ps</code> for enumerating processes both locally and remotely.</p>
+
+<p>For example to enumerate processes on your tethered iOS device:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>frida-ps -U</code></pre></div>
+
+<p>The <code>-U</code> switch is also accepted by <code>frida-trace</code> and <code>frida-discover</code>.</p>
+
+<p>Docs how to set this up on your iOS device will soon be added to the website.</p>
+
+<p>However, that’s not the most exciting part. Starting with this release,
+Frida got its first contribution since the HN launch.
+<a href="https://github.com/pmorici">Pete Morici</a> dived in and contributed support
+for specifying module-relative functions in <code>frida-trace</code>:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>frida-trace -a <span class="s1">&#39;kernel32.dll+0x1234&#39;</span></code></pre></div>
+
+<p>Enjoy!</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/01/11/frida-1-0-6-released/">
+      Frida 1.0.6 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      11 Jan 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>This release simplifies the licensing and fixes bugs reported by the community
+since the HN launch.</p>
+
+<p>Primarily:
+- Relicense remaining GPLv3+ Frida components to LGPLv2.1+ (same as frida-gum).
+- Tracer works on 64-bit with function addresses in the upper range
+- Linux build links with Frida’s own libraries instead of the build machine’s
+  corresponding libraries.</p>
+
+  </div>
+</article>
+
+
+  <article>
+  <h2>
+    <a href="/news/2014/01/05/frida-1-0-5-released/">
+      Frida 1.0.5 Released
+    </a>
+  </h2>
+  <span class="post-category">
+    
+    <span class="label">release</span>
+    
+  </span>
+  <div class="post-meta">
+    <span class="post-date">
+      05 Jan 2014
+    </span>
+    <a href="https://github.com/oleavr" class="post-author">
+      <img src="https://github.com/oleavr.png" class="avatar" alt="oleavr"/>
+      oleavr
+    </a>
+  </div>
+  <div class="post-content">
+    <p>This release improves <a href="https://github.com/frida/frida-python/blob/master/src/frida/tracer.py">frida-trace</a> with support for auto-generating,
+loading and reloading function handlers from scripts on the filesystem.
+Have a look at our <a href="/docs/quickstart">Quick-start guide</a> for a walkthrough.
+Also new in this release is Py3k support, which is available from <a href="https://pypi.python.org/pypi/frida">PyPI</a> on
+all platforms.</p>
+
+
+  </div>
+</article>
+
+
+
+      </div>
+
+      <div class="unit one-fifth hide-on-mobiles">
+  <aside>
+    <ul>
+      <li class="current">
+        <a href="/news/">All News</a>
+      </li>
+      <li class="">
+        <a href="/news/releases/">Frida Releases</a>
+      </li>
+    </ul>
+    <h4>Recent Releases</h4>
+    <ul>
+      
+      <li class="">
+        <a href="/news/2015/03/20/frida-3-0-0-released/">Version 3.0.0</a>
+      </li>
+      
+      <li class="">
+        <a href="/news/2015/03/01/frida-2-0-2-released/">Version 2.0.2</a>
+      </li>
+      
+      <li class="">
+        <a href="/news/2015/03/01/frida-2-0-1-released/">Version 2.0.1</a>
+      </li>
+      
+      <li class="">
+        <a href="/news/2015/03/01/frida-2-0-0-released/">Version 2.0.0</a>
+      </li>
+      
+      <li class="">
+        <a href="/news/2015/02/23/frida-1-8-0-released/">Version 1.8.0</a>
+      </li>
+      
+      <li>
+        <a href="/docs/history/">History »</a>
+      </li>
+    </ul>
+  </aside>
+</div>
+
+
+      <div class="clear"></div>
+
+    </div>
+  </section>
+
+
+  <footer>
+  <div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <p>By <a href="http://twitter.com/oleavr/">Ole André Vadla Ravnås</a> and <a href="http://kalleberg.org/">Karl Trygve Kalleberg</a>.</p>
+    </div>
+    <div class="unit two-thirds align-right center-on-mobiles">
+      <p>
+        Proudly hosted by
+        <a href="https://github.com">
+          <img src="/img/footer-logo.png" alt="GitHub • Social coding">
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+  
+
+
+  <!-- Google Analytics (http://google.com/analytics) -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-46880695-1']);
+    _gaq.push(['_setDomainName', '']); // Multiple sub-domains
+    _gaq.push(['_setAllowLinker', true]); // Multiple TLDs
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+
+</body>
+</html>

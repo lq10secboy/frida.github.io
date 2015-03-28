@@ -1,0 +1,2372 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript API</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="alternate" type="application/rss+xml" title="Frida - Feed" href="/feed.xml" />
+  <link rel="alternate" type="application/atom+xml" title="Recent commits to Frida’s master branch" href="https://github.com/frida/frida/commits/master.atom" />
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/screen.css" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <script src="/js/modernizr-2.5.3.min.js"></script>
+</head>
+
+
+<body class="wrap">
+  <header>
+  <nav class="mobile-nav show-on-mobiles">
+    <ul>
+  <li class="">
+    <a href="/">Overview</a>
+  </li>
+  <li class="current">
+    <a href="/docs/home/">Doc<span class="show-on-mobiles">s</span><span class="hide-on-mobiles">umentation</span></a>
+  </li>
+  <li class="">
+    <a href="/news/">News</a>
+  </li>
+  <li class="">
+    <a href="https://github.com/frida"><span class="hide-on-mobiles">View on </span>GitHub</a>
+  </li>
+</ul>
+
+  </nav>
+  <div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <h1>
+        <a href="/">
+          <span>Frida</span>
+          <img src="/img/logo-2x.png" width="226" height="115" alt="">
+        </a>
+      </h1>
+    </div>
+    <nav class="main-nav unit two-thirds hide-on-mobiles">
+      <ul>
+  <li class="">
+    <a href="/">Overview</a>
+  </li>
+  <li class="current">
+    <a href="/docs/home/">Doc<span class="show-on-mobiles">s</span><span class="hide-on-mobiles">umentation</span></a>
+  </li>
+  <li class="">
+    <a href="/news/">News</a>
+  </li>
+  <li class="">
+    <a href="https://github.com/frida"><span class="hide-on-mobiles">View on </span>GitHub</a>
+  </li>
+</ul>
+
+    </nav>
+  </div>
+</header>
+
+
+    <section class="docs">
+    <div class="grid">
+
+      <div class="docs-nav-mobile unit whole show-on-mobiles">
+  <select onchange="if (this.value) window.location.href=this.value">
+    <option value="">Navigate the docs…</option>
+    <optgroup label="Getting started">
+      
+
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/docs/home/">Welcome</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/docs/quickstart/">Quick-start guide</option>
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/docs/installation/">Installation</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/docs/usage/">Basic Usage</option>
+    
+  
+
+
+    </optgroup>
+    <optgroup label="Tutorials">
+      
+
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/docs/functions/">Functions</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/docs/messages/">Messages</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/docs/ios/">iOS</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+      <option value="/docs/android/">Android</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+    </optgroup>
+    <optgroup label="API Reference">
+      
+
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/docs/javascript-api/">JavaScript API</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+    </optgroup>
+    <optgroup label="Miscellaneous">
+      
+
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/docs/troubleshooting/">Troubleshooting</option>
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+      <option value="/docs/building/">Building</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+    </optgroup>
+    <optgroup label="Meta">
+      
+
+
+  
+
+  
+    
+  
+    
+  
+    
+      <option value="/docs/contributing/">Contributing</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/docs/gsoc-ideas-2015/">GSoC Ideas 2015</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <option value="/docs/history/">History</option>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+    </optgroup>
+  </select>
+</div>
+
+
+      <div class="unit four-fifths">
+        <article>
+          <h1>JavaScript API</h1>
+          <h2 id="table-of-contents">Table of contents</h2>
+<ol>
+  <li><a href="#global">Global</a>
+    <ul>
+      <li><a href="#console">console</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#module">Module</a></li>
+      <li><a href="#memory">Memory</a></li>
+      <li><a href="#thread">Thread</a></li>
+      <li><a href="#nativepointer">NativePointer</a></li>
+      <li><a href="#nativefunction">NativeFunction</a></li>
+      <li><a href="#nativecallback">NativeCallback</a></li>
+      <li><a href="#socket">Socket</a></li>
+      <li><a href="#file">File</a></li>
+      <li><a href="#interceptor">Interceptor</a></li>
+      <li><a href="#stalker">Stalker</a></li>
+      <li><a href="#instruction">Instruction</a></li>
+      <li><a href="#objc">ObjC</a></li>
+      <li><a href="#dalvik">Dalvik</a></li>
+      <li><a href="#weakref">WeakRef</a></li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="global">Global</h2>
+
+<ul>
+  <li>
+    <p><code>ptr(s)</code>: short-hand for <code>new NativePointer(s)</code></p>
+  </li>
+  <li>
+    <p><code>NULL</code>: short-hand for <code>ptr("0")</code></p>
+  </li>
+  <li>
+    <p><code>recv([type, ]callback)</code>: request <code>callback</code> to be called on the next
+message received from your Frida-based application. Optionally <code>type</code> may
+be specified to only receive a message where the <code>type</code> field is set to
+<code>type</code>.</p>
+
+    <p>This will only give you one message, so you need to call <code>recv()</code> again
+to receive the next one.</p>
+  </li>
+  <li>
+    <p><code>send(message[, data])</code>: send the JavaScript object <code>message</code> to your
+Frida-based application (it must be serializable to JSON). <code>data</code> may be
+optionally passed to include a raw payload, like a buffer returned by
+<code>Memory#readByteArray</code>.</p>
+  </li>
+  <li>
+    <p><code>setTimeout(fn, delay)</code>: call <code>fn</code> after <code>delay</code> milliseconds. Returns an
+id that can be passed to <code>clearTimeout</code> to cancel it.</p>
+  </li>
+  <li>
+    <p><code>clearTimeout(id)</code>: cancel id returned by call to <code>setTimeout</code></p>
+  </li>
+  <li>
+    <p><code>setInterval(fn, delay)</code>: call <code>fn</code> every <code>delay</code> milliseconds. Returns an
+id that can be passed to <code>clearInterval</code> to cancel it.</p>
+  </li>
+  <li>
+    <p><code>clearInterval(id)</code>: cancel id returned by call to <code>setInterval</code></p>
+  </li>
+</ul>
+
+<h2 id="console">console</h2>
+
+<ul>
+  <li><code>console.log(line)</code>: write <code>line</code> to the console of your Frida-based
+application. The exact behavior depends on where
+<a href="https://github.com/frida/frida-core">frida-core</a> is integrated.
+For example, this output goes to <em>stdout</em> when using Frida through
+<a href="https://github.com/frida/frida-python">frida-python</a>,
+<a href="http://doc.qt.io/qt-5/qdebug.html">qDebug</a> when using
+<a href="https://github.com/frida/frida-qml">frida-qml</a>, etc.</li>
+</ul>
+
+<h2 id="process">Process</h2>
+
+<ul>
+  <li>
+    <p><code>Process.arch</code>: read-only property containing the string <code>ia32</code>, <code>x64</code> or
+<code>arm</code></p>
+  </li>
+  <li>
+    <p><code>Process.platform</code>: read-only property containing the string <code>windows</code>,
+<code>darwin</code> or <code>linux</code></p>
+  </li>
+  <li>
+    <p><code>Process.pointerSize</code>: read-only property containing the size of a pointer
+(in bytes) as a JavaScript number. This is used to make your scripts more
+portable.</p>
+  </li>
+  <li>
+    <p><code>Process.isDebuggerAttached()</code>: returns a boolean indicating whether a
+debugger is currently attached</p>
+  </li>
+  <li>
+    <p><code>Process.getCurrentThreadId()</code>: get this thread’s OS-specific id as a
+JavaScript number</p>
+  </li>
+  <li>
+    <p><code>Process.enumerateThreads(callbacks)</code>: enumerate threads alive right now,
+where <code>callbacks</code> is an object specifying:</p>
+
+    <ul>
+      <li><code>onMatch: function onMatch(thread)</code>: called with <code>thread</code> object
+containing:
+        <ul>
+          <li><code>id</code>: OS-specific id</li>
+          <li><code>state</code>: string specifying either <code>running</code>, <code>stopped</code>, <code>waiting</code>,
+<code>uninterruptible</code> or <code>halted</code></li>
+          <li><code>registers</code>: object with the keys <code>pc</code> and <code>sp</code>, which are
+NativePointer objects specifying EIP/RIP/PC and ESP/RSP/SP,
+respectively, for ia32/x64/arm. Other processor-specific keys
+are also available, e.g. <code>eax</code>, <code>rax</code>, <code>r0</code>, <code>x0</code>, etc.</li>
+        </ul>
+
+        <p>This function may return the string <code>stop</code> to cancel the enumeration
+early.</p>
+      </li>
+      <li><code>onComplete: function onComplete()</code>: called when all threads have been
+enumerated</li>
+    </ul>
+  </li>
+  <li>
+    <p><code>Process.enumerateModules(callbacks)</code>: enumerate modules loaded right now,
+where <code>callbacks</code> is an object specifying:</p>
+
+    <ul>
+      <li><code>onMatch: function onMatch(module)</code>: called with <code>module</code> object
+containing:
+        <ul>
+          <li><code>name</code>: canonical module name as a string</li>
+          <li><code>base</code>: base address as a <code>NativePointer</code></li>
+          <li><code>size</code>: size in bytes</li>
+          <li><code>path</code>: full filesystem path as a string</li>
+        </ul>
+
+        <p>This function may return the string <code>stop</code> to cancel the enumeration
+early.</p>
+      </li>
+      <li><code>onComplete: function onComplete()</code>: called when all modules have been
+enumerated</li>
+    </ul>
+  </li>
+  <li>
+    <p><code>Process.enumerateRanges(protection, callbacks)</code>: enumerate memory ranges
+satisfying <code>protection</code> given as a string of the form: <code>rwx</code>, where <code>rw-</code>
+means “must be at least readable and writable”. <code>callbacks</code> is an object
+specifying:</p>
+
+    <ul>
+      <li><code>onMatch: function onMatch(range)</code>: called with <code>range</code> object
+containing:
+        <ul>
+          <li><code>base</code>: base address as a <code>NativePointer</code></li>
+          <li><code>size</code>: size in bytes</li>
+          <li><code>protection</code>: protection string (see above)</li>
+        </ul>
+
+        <p>This function may return the string <code>stop</code> to cancel the enumeration
+early.</p>
+      </li>
+      <li><code>onComplete: function onComplete()</code>: called when all memory ranges have
+been enumerated</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="module">Module</h2>
+
+<ul>
+  <li>
+    <p><code>Module.enumerateExports(name, callbacks)</code>: enumerate exports of module with
+the <code>name</code> as seen in <code>Process#enumerateModules</code>. <code>callbacks</code> is an object
+specifying:</p>
+
+    <ul>
+      <li><code>onMatch: function onMatch(mod)</code>: called with <code>mod</code> object containing:
+        <ul>
+          <li><code>type</code>: string specifying either <code>function</code> or <code>variable</code></li>
+          <li><code>name</code>: export name as a string</li>
+          <li><code>address</code>: absolute address as a <code>NativePointer</code></li>
+        </ul>
+
+        <p>This function may return the string <code>stop</code> to cancel the enumeration
+early.</p>
+      </li>
+      <li><code>onComplete: function onComplete()</code>: called when all exports have been
+enumerated</li>
+    </ul>
+  </li>
+  <li>
+    <p><code>Module.enumerateRanges(name, protection, callbacks)</code>: just like
+<code>Process#enumerateRanges</code>, except it’s scoped to the specified module
+<code>name</code>.</p>
+  </li>
+  <li>
+    <p><code>Module.findBaseAddress(name)</code>: returns the base address of the <code>name</code>
+module, or <code>null</code> if the module isn’t loaded</p>
+  </li>
+  <li>
+    <p><code>Module.findExportByName(module, exp)</code>: returns the absolute address of the
+export named <code>exp</code> in <code>module</code></p>
+  </li>
+</ul>
+
+<h2 id="memory">Memory</h2>
+
+<ul>
+  <li>
+    <p><code>Memory.scan(address, size, pattern, callbacks)</code>: scan memory for
+occurences of <code>pattern</code> in the memory range given by <code>address</code> and <code>size</code>.</p>
+
+    <ul>
+      <li>
+        <p><code>pattern</code> must be of the form “13 37 ?? ff” to match 0x13 followed by
+0x37 followed by any byte followed by 0xff</p>
+      </li>
+      <li>
+        <p><code>callbacks</code> is an object with:</p>
+
+        <ul>
+          <li>
+            <p><code>onMatch: function onMatch(address, size)</code>: called with <code>address</code>
+containing the address of the occurence as a <code>NativePointer</code> and
+<code>size</code> specifying the size as a JavaScript number.</p>
+
+            <p>This function may return the string <code>stop</code> to cancel the memory
+scanning early.</p>
+          </li>
+          <li>
+            <p><code>onError: function onError(reason)</code>: called with <code>reason</code> when
+there was a memory access error while scanning</p>
+          </li>
+          <li>
+            <p><code>onComplete: function onComplete()</code>: called when the memory range
+has been fully scanned</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><code>Memory.alloc(size)</code>: allocate <code>size</code> bytes of memory on the heap. The
+returned object is a <code>NativePointer</code> and the heap memory will be released
+when all JavaScript handles to it are gone. This means you need to keep
+a reference to it while the pointer is being used by code outside the
+JavaScript runtime.</p>
+  </li>
+  <li>
+    <p><code>Memory.copy(dst, src, n)</code>: just like memcpy.</p>
+  </li>
+  <li>
+    <p><code>Memory.dup(address, size)</code>: short-hand for <code>Memory.alloc()</code> followed by
+<code>Memory.copy()</code>.</p>
+  </li>
+  <li>
+    <p><code>Memory.protect(address, size, protection)</code>: update protection on a region
+of memory, where <code>protection</code> is a string of the same format as
+<code>Process.enumerateRanges()</code>.</p>
+
+    <p>For example:</p>
+  </li>
+</ul>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">Memory</span><span class="p">.</span><span class="nx">protect</span><span class="p">(</span><span class="nx">ptr</span><span class="p">(</span><span class="s2">&quot;0x1234&quot;</span><span class="p">),</span> <span class="mi">4096</span><span class="p">,</span> <span class="s1">&#39;rw-&#39;</span><span class="p">);</span></code></pre></div>
+
+<ul>
+  <li>
+    <p><code>Memory.readPointer(address)</code>: read a pointer from <code>address</code> and return
+it as a <code>NativePointer</code>.</p>
+
+    <p>A JavaScript exception will be thrown if <code>address</code> isn’t readable.</p>
+  </li>
+  <li>
+    <p><code>Memory.writePointer(address, ptr)</code>: write <code>ptr</code> to <code>address</code>.</p>
+
+    <p>A JavaScript exception will be thrown if <code>address</code> isn’t writable.</p>
+  </li>
+  <li>
+    <p><code>Memory.readS8(address)</code>, <code>Memory.readU8(address)</code>,
+<code>Memory.readS16(address)</code>, <code>Memory.readU16(address)</code>,
+<code>Memory.readS32(address)</code>, <code>Memory.readU32(address)</code>,
+<code>Memory.readS64(address)</code>, <code>Memory.readU64(address)</code>:
+read a signed or unsigned 8/16/32/64-bit value from <code>address</code> and return it
+as a JavaScript number.</p>
+
+    <p>A JavaScript exception will be thrown if <code>address</code> isn’t readable.</p>
+  </li>
+  <li>
+    <p><code>Memory.writeS8(address, value)</code>, <code>Memory.writeU8(address, value)</code>,
+<code>Memory.writeS16(address, value)</code>, <code>Memory.writeU16(address, value)</code>,
+<code>Memory.writeS32(address, value)</code>, <code>Memory.writeU32(address, value)</code>,
+<code>Memory.writeS64(address, value)</code>, <code>Memory.writeU64(address, value)</code>:
+write the JavaScript number <code>value</code> to the signed or unsigned 8/16/32/64-bit
+value at <code>address</code>.</p>
+
+    <p>A JavaScript exception will be thrown if <code>address</code> isn’t writable.</p>
+  </li>
+  <li>
+    <p><code>Memory.readByteArray(address, length)</code>: read <code>length</code> bytes from <code>address</code>
+and return it as a byte array. This byte array may be efficiently
+transferred to your Frida-based application by passing it as the second
+argument to <code>send()</code>.</p>
+
+    <p>A JavaScript exception will be thrown if any of the <code>length</code> bytes read from
+<code>address</code> isn’t readable.</p>
+  </li>
+  <li>
+    <p><code>Memory.writeByteArray(address, bytes)</code>: write the <code>bytes</code> byte array to
+<code>address</code>. This is either an object returned from <code>Memory.readByteArray()</code>
+or a JavaScript array-style object. For example: <code>[ 0x13, 0x37, 0x42 ]</code>.</p>
+
+    <p>A JavaScript exception will be thrown if any of the bytes written to
+<code>address</code> isn’t writable.</p>
+  </li>
+  <li>
+    <p><code>Memory.readUtf8String(address[, size = -1])</code>,
+<code>Memory.readUtf16String(address[, size = -1])</code>,
+<code>Memory.readAnsiString(address[, size = -1])</code>:
+read the bytes at <code>address</code> as a UTF-8, UTF-16 or ANSI string.  Supply the
+optional <code>size</code> if you know the size of the string in bytes, or omit it or
+specify -1 if the string is NUL-terminated.</p>
+
+    <p>A JavaScript exception will be thrown if any of the <code>size</code> bytes read from
+<code>address</code> isn’t readable.</p>
+  </li>
+  <li>
+    <p><code>Memory.writeUtf8String(address, str)</code>,
+<code>Memory.writeUtf16String(address, str)</code>,
+<code>Memory.writeAnsiString(address, str)</code>:
+encode and write the JavaScript string to <code>address</code> (with NUL-terminator).</p>
+
+    <p>A JavaScript exception will be thrown if any of the bytes written to
+<code>address</code> isn’t writable.</p>
+  </li>
+  <li>
+    <p><code>Memory.allocUtf8String(str)</code>,
+<code>Memory.allocUtf16String(str)</code>,
+<code>Memory.allocAnsiString(str)</code>:
+allocate, encode and write out <code>str</code> as a UTF-8/UTF-16/ANSI string on the
+heap. The returned object is a <code>NativePointer</code>. See <code>Memory#alloc</code> for
+details about its lifetime.</p>
+  </li>
+</ul>
+
+<h2 id="thread">Thread</h2>
+
+<ul>
+  <li><code>Thread.sleep(delay)</code>: suspend execution of the current thread for <code>delay</code>
+seconds specified as a JavaScript number. For example 0.05 to sleep for
+50 ms.</li>
+</ul>
+
+<h2 id="nativepointer">NativePointer</h2>
+
+<ul>
+  <li>
+    <p><code>new NativePointer(s)</code>: create a new NativePointer from the string <code>s</code>
+containing a memory address in either decimal, or hexadecimal if prefixed
+with “0x”. You may use the <code>ptr(s)</code> short-hand for brevity.</p>
+  </li>
+  <li>
+    <p><code>isNull()</code>: returns a boolean allowing you to conveniently check if a
+pointer is NULL</p>
+  </li>
+  <li>
+    <p><code>add(rhs)</code>: make a new NativePointer with this NativePointer plus <code>rhs</code>.
+<code>rhs</code> may either be a JavaScript number or another NativePointer.</p>
+  </li>
+  <li>
+    <p><code>sub(rhs)</code>: make a new NativePointer with this NativePointer minus <code>rhs</code>.
+<code>rhs</code> may either be a JavaScript number or another NativePointer.</p>
+  </li>
+  <li>
+    <p><code>toInt32()</code>: cast this NativePointer to a signed 32-bit integer</p>
+  </li>
+  <li>
+    <p><code>toString([radix = 16])</code>: convert to a string of optional radix (defaults to
+16)</p>
+  </li>
+</ul>
+
+<h2 id="nativefunction">NativeFunction</h2>
+
+<ul>
+  <li>
+    <p><code>new NativeFunction(address, returnType, argTypes[, abi])</code>: create a new
+NativeFunction to call the function at <code>address</code> (specified with a
+<code>NativePointer</code>), where the <code>returnType</code> string specifies the return type,
+and the <code>argTypes</code> array specifies the argument types. You may optionally
+also specify <code>abi</code> if not system default. For variadic functions, add a
+<code>'...'</code> entry to <code>argTypes</code> between the fixed arguments and the variadic
+ones.
+Note that the returned object is also a <code>NativePointer</code>, and can thus be
+passed to <code>Interceptor#attach</code>.</p>
+
+    <p>Supported types:</p>
+
+    <ul>
+      <li>void</li>
+      <li>pointer</li>
+      <li>int</li>
+      <li>uint</li>
+      <li>long</li>
+      <li>ulong</li>
+      <li>char</li>
+      <li>uchar</li>
+      <li>float</li>
+      <li>double</li>
+      <li>int8</li>
+      <li>uint8</li>
+      <li>int16</li>
+      <li>uint16</li>
+      <li>int32</li>
+      <li>uint32</li>
+      <li>int64</li>
+      <li>uint64</li>
+    </ul>
+
+    <p>Supported ABIs:</p>
+
+    <ul>
+      <li>
+        <p>default</p>
+      </li>
+      <li>Windows 32-bit:
+        <ul>
+          <li>sysv</li>
+          <li>stdcall</li>
+          <li>thiscall</li>
+          <li>fastcall</li>
+          <li>mscdecl</li>
+        </ul>
+      </li>
+      <li>Windows 64-bit:
+        <ul>
+          <li>win64</li>
+        </ul>
+      </li>
+      <li>UNIX x86:
+        <ul>
+          <li>sysv</li>
+          <li>unix64</li>
+        </ul>
+      </li>
+      <li>UNIX ARM:
+        <ul>
+          <li>sysv</li>
+          <li>vfp</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="nativecallback">NativeCallback</h2>
+
+<ul>
+  <li><code>new NativeCallback(func, returnType, argTypes[, abi])</code>: create a new
+NativeCallback implemented by the JavaScript function <code>func</code>, where the
+<code>returnType</code> string specifies the return type, and the <code>argTypes</code> array
+specifies the argument types. You may also specify the abi if not system
+default. See <code>NativeFunction</code> for details about supported types and abis.
+Note that the returned object is also a <code>NativePointer</code>, and can thus be
+passed to <code>Interceptor#replace</code>.</li>
+</ul>
+
+<h2 id="socket">Socket</h2>
+
+<ul>
+  <li>
+    <p><code>Socket.type(handle)</code>: inspect the OS socket <code>handle</code> and return its type
+as a string which is either <code>tcp</code>, <code>udp</code>, <code>tcp6</code>, <code>udp6</code>, <code>unix:stream</code>,
+<code>unix:dgram</code>, or <code>null</code> if invalid or unknown.</p>
+  </li>
+  <li>
+    <p><code>Socket.localAddress(handle)</code>,
+<code>Socket.peerAddress(handle)</code>:
+inspect the OS socket <code>handle</code> and return its local or peer address, or
+<code>null</code> if invalid or unknown.</p>
+
+    <p>The object returned has the fields:
+-   <code>ip</code>: (IP sockets) IP address as a string.
+-   <code>port</code>: (IP sockets) Port number as a JavaScript number.
+-   <code>path</code>: (UNIX sockets) UNIX path as a string.</p>
+  </li>
+</ul>
+
+<h2 id="file">File</h2>
+
+<ul>
+  <li>
+    <p><code>new File(filePath, mode)</code>: open or create the file at <code>filePath</code> with
+the <code>mode</code> string specifying how it should be opened. For example <code>"wb"</code>
+to open the file for writing in binary mode (this is the same format as
+<code>fopen()</code> from the C standard library).</p>
+  </li>
+  <li>
+    <p><code>write(data)</code>: synchronously write <code>data</code> to the file, where <code>data</code> is
+either a string or a buffer as returned by <code>Memory#readByteArray</code></p>
+  </li>
+  <li>
+    <p><code>flush()</code>: flush any buffered data to the underlying file</p>
+  </li>
+  <li>
+    <p><code>close()</code>: close the file. You should call this function when you’re done
+with the file.</p>
+  </li>
+</ul>
+
+<h2 id="interceptor">Interceptor</h2>
+
+<ul>
+  <li>
+    <p><code>Interceptor.attach(target, callbacks)</code>: intercept calls to function at
+<code>target</code>. This is a <code>NativePointer</code> specifying the address of the function
+you would like to intercept calls to. Note that on 32-bit ARM this address
+must have its least significant bit set to 0 for ARM functions, and 1 for
+Thumb functions. Frida takes care of this detail for you if you get the
+address from a Frida API (for example <code>Module.findExportByName()</code>).</p>
+
+    <p>The <code>callbacks</code> argument is an object containing one or more of:</p>
+
+    <ul>
+      <li>
+        <p><code>onEnter: function onEnter(args)</code>: callback function given one argument
+<code>args</code> that can be used to read or write arguments as an array of
+<code>NativePointer</code> objects.</p>
+      </li>
+      <li>
+        <p><code>onLeave: function onLeave(retval)</code>: callback function given one
+argument <code>retval</code> that is a <code>NativePointer</code> containing the return
+value. You may call <code>retval.replace(1337)</code> to replace the return value
+with the integer <code>1337</code>, or <code>retval.replace(ptr("0x1234"))</code> to replace
+with a pointer.</p>
+      </li>
+    </ul>
+
+    <p>Note that these functions will be invoked with <code>this</code> bound to a
+per-invocation (thread-local) object where you can store arbitrary data,
+which is useful if you want to read an argument in <code>onEnter</code> and act on it
+in <code>onLeave</code>.</p>
+
+    <p>For example:</p>
+  </li>
+</ul>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">Interceptor</span><span class="p">.</span><span class="nx">attach</span><span class="p">(</span><span class="nx">Module</span><span class="p">.</span><span class="nx">findExportByName</span><span class="p">(</span><span class="s2">&quot;libc.so&quot;</span><span class="p">,</span> <span class="s2">&quot;read&quot;</span><span class="p">),</span> <span class="p">{</span>
+    <span class="nx">onEnter</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">onEnter</span><span class="p">(</span><span class="nx">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">fileDescriptor</span> <span class="o">=</span> <span class="nx">args</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">toInt32</span><span class="p">();</span>
+    <span class="p">},</span>
+    <span class="nx">onLeave</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">onLeave</span><span class="p">(</span><span class="nx">retval</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">retval</span><span class="p">.</span><span class="nx">toInt32</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+            <span class="cm">/* do something with this.fileDescriptor */</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">});</span></code></pre></div>
+
+<pre><code>Additionally, the object contains some useful properties:
+
+-   `registers`: object with the keys `pc` and `sp`, which are
+    NativePointer objects specifying EIP/RIP/PC and ESP/RSP/SP,
+    respectively, for ia32/x64/arm. Other processor-specific keys
+    are also available, e.g. `eax`, `rax`, `r0`, `x0`, etc.
+
+-   `errno`: (UNIX) current errno value (you may replace it)
+
+-   `lastError`: (Windows) current OS error value (you may replace it)
+
+-   `threadId`: OS thread ID
+
+-   `depth`: call depth of relative to other invocations
+</code></pre>
+
+<ul>
+  <li>
+    <p><code>Interceptor.detachAll()</code>: detach all previously attached callbacks.</p>
+  </li>
+  <li>
+    <p><code>Interceptor.replace(target, replacement)</code>: replace function at <code>target</code>
+with implementation at <code>replacement</code>. This is typically used if you want
+to fully or partially replace an existing function’s implementation. Use
+<code>NativeCallback</code> to implement a <code>replacement</code> in JavaScript. Note that
+<code>replacement</code> will be kept alive until <code>Interceptor#revert</code> is called.
+If you want to chain to the original implementation you can synchronously
+call <code>target</code> through a <code>NativeFunction</code> inside your implementation, which
+will bypass and go directly to the original implementation.</p>
+
+    <p>Here’s an example:</p>
+  </li>
+</ul>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">openPtr</span> <span class="o">=</span> <span class="nx">Module</span><span class="p">.</span><span class="nx">findExportByName</span><span class="p">(</span><span class="s2">&quot;libc.so&quot;</span><span class="p">,</span> <span class="s2">&quot;open&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">open</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">NativeFunction</span><span class="p">(</span><span class="nx">openPtr</span><span class="p">,</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;pointer&#39;</span><span class="p">,</span> <span class="s1">&#39;int&#39;</span><span class="p">]);</span>
+<span class="nx">Interceptor</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="nx">openPtr</span><span class="p">,</span> <span class="k">new</span> <span class="nx">NativeCallback</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">pathPtr</span><span class="p">,</span> <span class="nx">flags</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">Memory</span><span class="p">.</span><span class="nx">readUtf8String</span><span class="p">(</span><span class="nx">pathPtr</span><span class="p">);</span>
+    <span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Opening &#39;&quot;</span> <span class="o">+</span> <span class="nx">path</span> <span class="o">+</span> <span class="s2">&quot;&#39;&quot;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">fd</span> <span class="o">=</span> <span class="nx">open</span><span class="p">(</span><span class="nx">pathPtr</span><span class="p">,</span> <span class="nx">flags</span><span class="p">);</span>
+    <span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Got fd: &quot;</span> <span class="o">+</span> <span class="nx">fd</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nx">fd</span><span class="p">;</span>
+<span class="p">},</span> <span class="s1">&#39;int&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;pointer&#39;</span><span class="p">,</span> <span class="s1">&#39;int&#39;</span><span class="p">]));</span></code></pre></div>
+
+<ul>
+  <li><code>Interceptor.revert(target)</code>: revert function at <code>target</code> to the previous
+implementation.</li>
+</ul>
+
+<h2 id="stalker">Stalker</h2>
+
+<ul>
+  <li>
+    <p><code>Stalker.follow([threadId, options])</code>: start stalking <code>threadId</code> (or the
+current thread if omitted), optionally with <code>options</code> for enabling events.</p>
+
+    <p>For example:</p>
+  </li>
+</ul>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">Stalker</span><span class="p">.</span><span class="nx">follow</span><span class="p">(</span><span class="nx">Process</span><span class="p">.</span><span class="nx">getCurrentThreadId</span><span class="p">(),</span> <span class="p">{</span>
+  <span class="nx">events</span><span class="o">:</span> <span class="p">{</span>
+    <span class="nx">call</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// CALL instructions: yes please</span>
+    <span class="nx">ret</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// RET instructions: no thanks</span>
+    <span class="nx">exec</span><span class="o">:</span> <span class="kc">false</span> <span class="c1">// all instructions: no thanks</span>
+  <span class="p">},</span>
+  <span class="nx">onReceive</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">onReceive</span><span class="p">(</span><span class="nx">events</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Called with `events` containing a binary blob which is one or more</span>
+    <span class="c1">// GumEvent structs.  See `gumevent.h` for the format. This is obviously a</span>
+    <span class="c1">// terrible API that is subject to change once a better trade-off between</span>
+    <span class="c1">// ease-of-use and performance has been found.</span>
+  <span class="p">},</span>
+  <span class="nx">onCallSummary</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">onCallSummary</span><span class="p">(</span><span class="nx">summary</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Called with `summary` being a key-value mapping of call target to number</span>
+    <span class="c1">// of calls, in the current time window. You would typically implement this</span>
+    <span class="c1">// instead of `onReceive` for efficiency.</span>
+  <span class="p">}</span>
+<span class="p">});</span></code></pre></div>
+
+<ul>
+  <li>
+    <p><code>Stalker.unfollow([threadId])</code>: stop stalking <code>threadId</code> (or the current
+thread if omitted).</p>
+  </li>
+  <li>
+    <p><code>Stalker.garbageCollect()</code>: free accumulated memory at a safe point after
+<code>Stalker#unfollow</code>. This is needed to avoid race-conditions where the
+thread just unfollowed is executing its last instructions.</p>
+  </li>
+  <li>
+    <p><code>Stalker.addCallProbe(address, callback)</code>: call <code>callback</code> (see
+<code>Interceptor#attach#onEnter</code> for signature) synchronously when a CALL is
+made to <code>address</code>. Returns an id that can be passed to
+<code>Stalker#removeCallProbe</code> later.</p>
+  </li>
+  <li>
+    <p>Stalker.removeCallProbe: remove a call probe added by
+<code>Stalker#addCallProbe</code>.</p>
+  </li>
+  <li>
+    <p><code>Stalker.trustThreshold</code>: an integer specifying how many times a piece of
+code needs to be executed before it is assumed it can be trusted to not
+mutate.
+Specify -1 for no trust (slow), 0 to trust code from the get-go, and N to
+trust code after it has been executed N times. Defaults to 1.</p>
+  </li>
+  <li>
+    <p><code>Stalker.queueCapacity</code>: an integer specifying the capacity of the event
+queue in number of events. Defaults to 16384 events.</p>
+  </li>
+  <li>
+    <p><code>Stalker.queueDrainInterval</code>: an integer specifying the time in milliseconds
+between each time the event queue is drained. Defaults to 250 ms, which
+means that the event queue is drained four times per second.</p>
+  </li>
+</ul>
+
+<h2 id="instruction">Instruction</h2>
+
+<ul>
+  <li>
+    <p><code>Instruction.parse(target)</code>: parse the instruction at the <code>target</code> address
+in memory, represented by a <code>NativePointer</code>.
+Note that on 32-bit ARM this address must have its least significant bit
+set to 0 for ARM functions, and 1 for Thumb functions. Frida takes care
+of this detail for you if you get the address from a Frida API (for
+example <code>Module.findExportByName()</code>).</p>
+
+    <p>The object returned has the fields:
+-   <code>address</code>: Address (EIP) of this instruction, as a <code>NativePointer</code>.
+-   <code>next</code>: Pointer to the next instruction, so you can <code>parse()</code> it.
+-   <code>size</code>: Size of this instruction.
+-   <code>mnemonic</code>: String representation of instruction mnemonic.
+-   <code>opStr</code>: String representation of instruction operands.
+-   <code>toString()</code>: Convert to a human-readable string.</p>
+  </li>
+</ul>
+
+<h2 id="objc">ObjC</h2>
+
+<ul>
+  <li>
+    <p><code>ObjC.available</code>: a boolean specifying whether the current process has an
+Objective-C runtime loaded. Do not invoke any other <code>ObjC</code> properties or
+methods unless this is the case.</p>
+  </li>
+  <li>
+    <p><code>ObjC.classes</code>: an array of strings specifying the names of classes currently
+registered. You may call <code>ObjC.use()</code> to further examine them, or
+<code>ObjC.refreshClasses()</code> to ensure that the list is up-to-date.</p>
+  </li>
+  <li>
+    <p><code>ObjC.mainQueue</code>: the GCD queue of the main thread</p>
+  </li>
+  <li>
+    <p><code>ObjC.schedule(queue, work)</code>: schedule the JavaScript function <code>work</code> on
+the GCD queue specified by <code>queue</code>. An <code>NSAutoreleasePool</code> is created just
+before calling <code>work</code>, and cleaned up on return.</p>
+  </li>
+</ul>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">NSSound</span> <span class="o">=</span> <span class="nx">ObjC</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">&#39;NSSound&#39;</span><span class="p">);</span> <span class="cm">/* Mac */</span>
+<span class="nx">ObjC</span><span class="p">.</span><span class="nx">schedule</span><span class="p">(</span><span class="nx">ObjC</span><span class="p">.</span><span class="nx">mainQueue</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">sound</span> <span class="o">=</span> <span class="nx">NSSound</span><span class="p">.</span><span class="nx">alloc</span><span class="p">().</span><span class="nx">initWithContentsOfFile_byReference_</span><span class="p">(</span><span class="s2">&quot;/Users/oleavr/.Trash/test.mp3&quot;</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+    <span class="nx">sound</span><span class="p">.</span><span class="nx">play</span><span class="p">();</span>
+<span class="p">});</span></code></pre></div>
+
+<ul>
+  <li><code>ObjC.use(className)</code>: dynamically get a JavaScript binding for <code>className</code>
+by returning a class object.</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">UIAlertView</span> <span class="o">=</span> <span class="nx">ObjC</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">&#39;UIAlertView&#39;</span><span class="p">);</span> <span class="cm">/* iOS */</span>
+<span class="kd">var</span> <span class="nx">view</span> <span class="o">=</span> <span class="nx">UIAlertView</span><span class="p">.</span><span class="nx">alloc</span><span class="p">().</span><span class="nx">initWithTitle_message_delegate_cancelButtonTitle_otherButtonTitles_</span><span class="p">(</span>
+    <span class="s2">&quot;Frida&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Hello from Frida&quot;</span><span class="p">,</span>
+    <span class="nx">ptr</span><span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">),</span>
+    <span class="s2">&quot;OK&quot;</span><span class="p">,</span>
+    <span class="nx">ptr</span><span class="p">(</span><span class="s2">&quot;0&quot;</span><span class="p">));</span>
+<span class="nx">view</span><span class="p">.</span><span class="nx">show</span><span class="p">();</span>
+<span class="nx">view</span><span class="p">.</span><span class="nx">release</span><span class="p">();</span></code></pre></div>
+
+<ul>
+  <li><code>ObjC.cast(handle, klass)</code>: create a JavaScript wrapper given the existing
+instance at <code>handle</code> of given class <code>klass</code> (as returned from <code>ObjC.use()</code>).</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">NSSound</span> <span class="o">=</span> <span class="nx">ObjC</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">&#39;NSSound&#39;</span><span class="p">);</span> <span class="cm">/* Mac */</span>
+<span class="kd">var</span> <span class="nx">sound</span> <span class="o">=</span> <span class="nx">ObjC</span><span class="p">.</span><span class="nx">cast</span><span class="p">(</span><span class="nx">ptr</span><span class="p">(</span><span class="s2">&quot;0x1234&quot;</span><span class="p">),</span> <span class="nx">NSSound</span><span class="p">);</span></code></pre></div>
+
+<ul>
+  <li><code>ObjC.implement(method, fn)</code>: create a JavaScript implementation compatible
+with the signature of <code>method</code>, where the JavaScript function <code>fn</code> is used
+as the implementation. Returns a <code>NativeCallback</code> that you may assign to an
+ObjC method’s <code>implementation</code> property.</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">NSSound</span> <span class="o">=</span> <span class="nx">ObjC</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">&#39;NSSound&#39;</span><span class="p">);</span> <span class="cm">/* Mac */</span>
+<span class="kd">var</span> <span class="nx">oldImpl</span> <span class="o">=</span> <span class="nx">NSSound</span><span class="p">.</span><span class="nx">play</span><span class="p">.</span><span class="nx">implementation</span><span class="p">;</span>
+<span class="nx">NSSound</span><span class="p">.</span><span class="nx">play</span><span class="p">.</span><span class="nx">implementation</span> <span class="o">=</span> <span class="nx">ObjC</span><span class="p">.</span><span class="nx">implement</span><span class="p">(</span><span class="nx">NSSound</span><span class="p">.</span><span class="nx">play</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">handle</span><span class="p">,</span> <span class="nx">selector</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">oldImpl</span><span class="p">(</span><span class="nx">handle</span><span class="p">,</span> <span class="nx">selector</span><span class="p">);</span>
+<span class="p">});</span></code></pre></div>
+
+<blockquote>
+  <p>As the <code>implementation</code> property is a <code>NativeFunction</code> and thus also a
+  <code>NativePointer</code>, you may also use <code>Interceptor</code> to hook functions:</p>
+</blockquote>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">NSSound</span> <span class="o">=</span> <span class="nx">ObjC</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">&#39;NSSound&#39;</span><span class="p">);</span> <span class="cm">/* Mac */</span>
+<span class="nx">Interceptor</span><span class="p">.</span><span class="nx">attach</span><span class="p">(</span><span class="nx">NSSound</span><span class="p">.</span><span class="nx">play</span><span class="p">.</span><span class="nx">implementation</span><span class="p">,</span> <span class="p">{</span>
+    <span class="nx">onEnter</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">onEnter</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nx">send</span><span class="p">(</span><span class="s2">&quot;[NSSound play]&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">});</span></code></pre></div>
+
+<ul>
+  <li>
+    <p><code>ObjC.refreshClasses()</code>: refresh the list of classes currently registered,
+as reported by <code>ObjC.classes</code></p>
+  </li>
+  <li>
+    <p><code>ObjC.selector(name)</code>: convert the JavaScript string <code>name</code> to a selector</p>
+  </li>
+  <li>
+    <p><code>ObjC.selectorAsString(sel)</code>: convert the selector <code>sel</code> to a JavaScript
+string</p>
+  </li>
+</ul>
+
+<h2 id="dalvik">Dalvik</h2>
+
+<ul>
+  <li>
+    <p><code>Dalvik.available</code>: a boolean specifying whether the current process has the
+Dalvik VM loaded. Do not invoke any other <code>Dalvik</code> properties or methods
+unless this is the case.</p>
+  </li>
+  <li>
+    <p><code>Dalvik.perform(fn)</code>: ensure that the current thread is attached to the VM
+and call <code>fn</code>. (This isn’t necessary in callbacks from Java.)</p>
+  </li>
+</ul>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">Dalvik</span><span class="p">.</span><span class="nx">perform</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">Activity</span> <span class="o">=</span> <span class="nx">Dalvik</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s2">&quot;android.app.Activity&quot;</span><span class="p">);</span>
+    <span class="nx">Activity</span><span class="p">.</span><span class="nx">onResume</span><span class="p">.</span><span class="nx">implementation</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="nx">send</span><span class="p">(</span><span class="s2">&quot;onResume() got called! Let&#39;s call the original implementation&quot;</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">onResume</span><span class="p">();</span>
+    <span class="p">};</span>
+<span class="p">});</span></code></pre></div>
+
+<ul>
+  <li><code>Dalvik.use(className)</code>: dynamically get a JavaScript wrapper for
+<code>className</code> that you can instantiate objects from by calling <code>$new()</code> on
+it to invoke a constructor. Call <code>$dispose()</code> on an instance to clean it
+up explicitly (or wait for the JavaScript object to get garbage-collected,
+or script to get unloaded). Static and non-static methods are available,
+and you can even replace a method implementation and throw an exception
+from it:</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">Dalvik</span><span class="p">.</span><span class="nx">perform</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">Activity</span> <span class="o">=</span> <span class="nx">Dalvik</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s2">&quot;android.app.Activity&quot;</span><span class="p">);</span>
+    <span class="kd">var</span> <span class="nx">Exception</span> <span class="o">=</span> <span class="nx">Dalvik</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s2">&quot;java.lang.Exception&quot;</span><span class="p">);</span>
+    <span class="nx">Activity</span><span class="p">.</span><span class="nx">onResume</span><span class="p">.</span><span class="nx">implementation</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="k">throw</span> <span class="nx">Exception</span><span class="p">.</span><span class="nx">$new</span><span class="p">(</span><span class="s2">&quot;Oh noes!&quot;</span><span class="p">);</span>
+    <span class="p">};</span>
+<span class="p">});</span></code></pre></div>
+
+<ul>
+  <li><code>Dalvik.cast(handle, klass)</code>: create a JavaScript wrapper given the existing
+instance at <code>handle</code> of given class <code>klass</code> (as returned from
+<code>Dalvik.use()</code>).</li>
+</ul>
+
+<div class="highlight"><pre><code class="language-js" data-lang="js"><span class="kd">var</span> <span class="nx">Activity</span> <span class="o">=</span> <span class="nx">Dalvik</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s2">&quot;android.app.Activity&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">activity</span> <span class="o">=</span> <span class="nx">Dalvik</span><span class="p">.</span><span class="nx">cast</span><span class="p">(</span><span class="nx">ptr</span><span class="p">(</span><span class="s2">&quot;0x1234&quot;</span><span class="p">),</span> <span class="nx">Activity</span><span class="p">);</span></code></pre></div>
+
+<h2 id="weakref">WeakRef</h2>
+
+<ul>
+  <li>
+    <p><code>WeakRef.bind(value, fn)</code>: monitor <code>value</code> and call the <code>fn</code> callback as
+soon as <code>value</code> has been garbage-collected, or the script is about to get
+unloaded. Returns an id that you can pass to <code>WeakRef.unbind()</code> for
+explicit cleanup.</p>
+
+    <p>This API is useful if you’re building a language-binding, where you need to
+free native resources when a JS value is no longer needed.</p>
+  </li>
+  <li>
+    <p><code>WeakRef.unbind(id)</code>: stop monitoring the value passed to
+<code>WeakRef.bind(value, fn)</code>, and call the <code>fn</code> callback immediately.</p>
+  </li>
+</ul>
+
+          <div class="section-nav">
+  <div class="left align-right">
+    
+      <a href="/docs/ios/" class="prev">
+        Back
+      </a>
+    
+  </div>
+  <div class="right align-left">
+    
+      <a href="/docs/troubleshooting/" class="next">
+        Next
+      </a>
+    
+  </div>
+  <div class="clear"></div>
+</div>
+
+
+        </article>
+      </div>
+
+      <div class="unit one-fifth hide-on-mobiles">
+  <aside>
+    <h4>Getting Started</h4>
+    
+
+<ul>
+
+  
+
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/docs/home/">Welcome</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/docs/quickstart/">Quick-start guide</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/docs/installation/">Installation</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/docs/usage/">Basic Usage</a></li>
+    
+  
+
+  
+</ul>
+
+    <h4>Tutorials</h4>
+    
+
+<ul>
+
+  
+
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/docs/functions/">Functions</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/docs/messages/">Messages</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/docs/ios/">iOS</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+    
+  
+
+  
+    
+      <li class=""><a href="/docs/android/">Android</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+</ul>
+
+    <h4>API Reference</h4>
+    
+
+<ul>
+
+  
+
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class="current"><a href="/docs/javascript-api/">JavaScript API</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+</ul>
+
+    <h4>Miscellaneous</h4>
+    
+
+<ul>
+
+  
+
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/docs/troubleshooting/">Troubleshooting</a></li>
+    
+  
+    
+  
+
+
+  
+
+  
+    
+  
+
+  
+    
+  
+    
+      <li class=""><a href="/docs/building/">Building</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+</ul>
+
+    <h4>Meta</h4>
+    
+
+<ul>
+
+  
+
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/docs/contributing/">Contributing</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/docs/gsoc-ideas-2015/">GSoC Ideas 2015</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+
+  
+
+  
+    
+  
+
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      <li class=""><a href="/docs/history/">History</a></li>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+
+  
+</ul>
+
+  </aside>
+</div>
+
+
+      <div class="clear"></div>
+
+    </div>
+  </section>
+
+
+  <footer>
+  <div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <p>By <a href="http://twitter.com/oleavr/">Ole André Vadla Ravnås</a> and <a href="http://kalleberg.org/">Karl Trygve Kalleberg</a>.</p>
+    </div>
+    <div class="unit two-thirds align-right center-on-mobiles">
+      <p>
+        Proudly hosted by
+        <a href="https://github.com">
+          <img src="/img/footer-logo.png" alt="GitHub • Social coding">
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+  
+
+
+  <!-- Google Analytics (http://google.com/analytics) -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-46880695-1']);
+    _gaq.push(['_setDomainName', '']); // Multiple sub-domains
+    _gaq.push(['_setAllowLinker', true]); // Multiple TLDs
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+
+</body>
+</html>
